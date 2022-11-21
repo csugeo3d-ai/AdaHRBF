@@ -4,9 +4,9 @@ Three-dimensional Stratigraphic Implicit Modeling Using Gradient-Adaptive Hermit
 This is a [Matlab](https://ww2.mathworks.cn/en/products/matlab.html) version of implicit modeling method using an Hermite-Birkhoff radial basis function (HRBF) formulation with an adaptive gradient magnitude (AdaHRBF) for continuous three-dimesnional stratigrahic potential field (3D SPF) modeling of multiple stratigraphic interfaces.  
 
 As described in **AdaHRBF: Gradient-Adaptive Hermite-Birkhoff Radial Basis Function Interpolants for Three-dimensional Stratigraphic Implicit Modeling** by Baoyi Zhang<sup>1</sup>, 
-Umair Khan<sup>2</sup>, 
-Yongqiang Tong<sup>1,3</sup> ,
 Linze Du<sup>1</sup>,
+Umair Khan<sup>2</sup>, 
+Yongqiang Tong<sup>1,3</sup>,
 Lifang Wang<sup>3,4</sup> and
 Hao Deng<sup>1*</sup>.   
 <sup>1</sup>Key laboratory of Metallogenic Prediction of Nonferrous Metals & Geological Environment Monitoring (Ministry of Education) / School of Geosciences & Info-Physics, Central South University; <sup>2</sup>Institute of Deep-Sea Science and Engineering, Chinese Academy of Sciences; <sup>3</sup>Wuhan ZGIS Science & Technology Co. Ltd.; <sup>4</sup>School of Geomatics and Geography, Hunan Vocational College of Engineering
