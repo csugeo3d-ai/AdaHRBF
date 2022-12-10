@@ -3,8 +3,8 @@ attributes_fault = xlsread('Data\FaultChange2.xls');
 % loading digital elevation model
 DEM = xlsread('Data\DEM100m.xlsx');
 % loading stratigraphic attribute points in two sub-domains
-attributes_north = xlsread('Data\NorthDicengPoint.xls');
-attributes_south = xlsread('Data\SouthDicengPoint.xls');
+attributes_north = xlsread('Data\NStrataPoint.xls');
+attributes_south = xlsread('Data\SStrataPoint.xls');
 % loading stratigraphic attribute points in two sub-domains
 attitude_north = xlsread('Data\NFattitude.xlsx');
 attitude_south = xlsread('Data\SFattitude.xlsx');
