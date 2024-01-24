@@ -2,7 +2,7 @@
 % description：get the strike vector from attitude vector
 % input：attitude_vector[x,y,z,dx,dy,dz]
 % return：strike_vector[x,y,z,gx,gy,gz]
-% author：Linze Du, Yongqiang Tong, Baoyi Zhang, Umair Khan, Lifang Wang and Hao Deng.  
+% author：
 % version：ver1.0.0[2022.9.23]
 
 function strike_vector= DipvectorToStrikvector(attitude_vector)

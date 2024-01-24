@@ -2,7 +2,7 @@
 % description：get the vector of attitude
 % input：attitude[x,y,z,attribute] 
 % return：vector[x,y,z,dx,dy,dz]
-% author：Linze Du, Yongqiang Tong, Baoyi Zhang, Umair Khan, Lifang Wang and Hao Deng.  
+% author：
 % version：ver1.0.0[2022.9.23]
 
 function [vector]=AttitudeToVector(attitude)

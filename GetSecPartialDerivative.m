@@ -1,17 +1,22 @@
-% name：GetSecPartialDerivative.m
-% description：calculating bsaefuncton value
-% input：k（float）：approximate minima in calculation(useless in current version) 
-%         points[X,Y,Z]
-%         X_：constants points
-%         Y_：constants points
-%         Z_：constants points
-%         type（int）：set basefunction type(useless in current version)
-% return：secPartialDerivativ(3*3)
-% author：Linze Du, Yongqiang Tong, Baoyi Zhang, Umair Khan, Lifang Wang and Hao Deng.
-% version：ver1.0.0[2022.9.23]
+% ====================================================================================
+% 函数名：GetPartialDerivative
+% 功  能：计算二阶偏导数
+% 输  入：k（float）：微分计算时近似极小值的变化量（目前没有作用）
+%         baseFuncType（int）：基函数类型（目前没有作用）
+%         x：自变量x
+%         y：自变量y
+%         z：自变量z
+%         x_：插值采样点常数项x
+%         y_：插值采样点常数项y
+%         z_：插值采样点常数项z
+% 返  回：secPartialDerivativ(3*3):自变量与各点二阶偏导矩阵
+% 作  者：杜林泽
+% 日  期：2022.9.10
+% 版  本：ver1.0.0
+% ====================================================================================
 function secPartialDerivative=GetSecPartialDerivative(x,y,z,x_,y_,z_,k,baseFuncType)
 
-grandg_xx = @(b1,b2,b3,x,y,z)  3*((b1-x)^2 + (b2-y)^2 + (b3-z)^2)^(1/2) + 3*((b1-x)^2)*((b1-x)^2 + (b2-y)^2 + (b3-z)^2)^(-1/2);
+grandg_xx = @(b1,b2,b3,x,y,z)  3*((b1-x)^2 + (b2-y)^2 + (b3-z)^2)^(1/2) + 3*((b1-x)^2)*((b1-x)^2 + (b2-y)^2 + (b3-z)^2)^(-1/2);%原来的方程的二阶导数
 grandg_yy = @(b1,b2,b3,x,y,z)  3*((b1-x)^2 + (b2-y)^2 + (b3-z)^2)^(1/2) + 3*((b2-y)^2)*((b1-x)^2 + (b2-y)^2 + (b3-z)^2)^(-1/2);
 grandg_zz = @(b1,b2,b3,x,y,z)  3*((b1-x)^2 + (b2-y)^2 + (b3-z)^2)^(1/2) + 3*((b3-z)^2)*((b1-x)^2 + (b2-y)^2 + (b3-z)^2)^(-1/2);
 grandg_xy = @(b1,b2,b3,x,y,z)  3*(b1-x)*(b2-y)*((b1-x)^2 + (b2-y)^2 + (b3-z)^2)^(-1/2);

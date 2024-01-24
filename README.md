@@ -29,7 +29,3 @@ The attribute points and attitude points dataset is available in Data file.
 
 Run Experiment_AdaHRBF.m to start building a model with multiple stratigraphic interfaces.
 
-## License
-
-This extension  is released under a creative commons license which allows for personal and research use only. 
-For a commercial license please contact the authors.

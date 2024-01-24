@@ -2,7 +2,7 @@
 % description：get the gradient vector from attitude vector
 % input：k（float）：attitude_vector[x,y,z,dx,dy,dz]
 % return：gradient_vector[x,y,z,gx,gy,gz]
-% author：Linze Du, Yongqiang Tong, Baoyi Zhang, Umair Khan, Lifang Wang and Hao Deng.  
+% author：
 % version：ver1.0.0[2022.9.23]
 function [gradient_vector]=DipvectorToGradientvector(attitude_vector)
 

@@ -10,15 +10,22 @@
 
 function A = GetMatrixA(k,baseFuncType,varargin)
 if nargin == 3
-% RBF
+%RBF
     attribute_points = varargin{1};
     clear varargin;
 elseif nargin == 4
-% HRBF
+%HRBF
     attribute_points = varargin{1};
     gradient_points = varargin{2};
     r_m=size(gradient_points,1);
     clear varargin;
+% elseif nargin==5
+%     attribute_points = varargin{1};
+%     gradient_points = varargin{2};
+%     tangent_points=varargin{3};
+%     r_m=size(gradient_points,1);
+%     r_t=size(tangent,1)
+%     clear varargin;
 else
    error('GetMatrixA:The number of parameters is incorrect.')
 end
@@ -87,7 +94,7 @@ for i=1:3*r_m
 end
 
 if nargin == 4
-% construct matrix A in (ada）HRBF
+%construct matrix A in (ada）HRBF
     A = zeros(r_num+3*r_m+4,r_num+3*r_m+4);
     A(1:r_num,1:r_num)=Phi;
     A(1:r_num,r_num+1:r_num+3*r_m)=Nabla_Phi;
@@ -99,6 +106,10 @@ if nargin == 4
     A((r_num+3*r_m+1):(r_num+3*r_m+4),(r_num+1):(r_num+3*r_m))=Nabla_Charlie';
     return
 end
+
+% %A(1,3)
+% Delta_Phi=zeros(r_num,3*r_m);
+% for 
 
 end
 

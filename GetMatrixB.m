@@ -5,7 +5,7 @@
 %         varargin{1}：[x,y,z,attribute] relatively butial depth for RBF,(ada)HRBF
 %         varargin{2}：[x,y,z,gx,gy,gz] gradient magnitude for (ada)HRBF
 % return：matrix B 
-% author：Linze Du, Yongqiang Tong, Baoyi Zhang, Umair Khan, Lifang Wang and Hao Deng.
+% author：
 % version：ver1.0.0[2022.9.23]
 function B = GetMatrixB(varargin)
 
